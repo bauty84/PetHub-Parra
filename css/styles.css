@@ -1,0 +1,2158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Smooch+Sans:wght@300;600;700;900&display=swap');
+
+html {
+    height: 100%;
+    max-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    max-height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+    background-color: #16385a;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #16385a;
+}
+
+
+/*---------------------------------*/
+/*             DESKTOP             */
+/*---------------------------------*/
+
+/*--------*/
+/* HEADER */
+/*--------*/
+
+.nav-container {
+    position: relative;
+    flex-direction: row;
+    max-width: 1220px;
+    background-color: #16385a;
+    margin: 0 auto;
+}
+
+.nav-logo img {
+    position: relative;
+    left: 10px;
+    height: 52px;
+    top: 11px;
+    width: 114px;
+    margin: 5px;
+}
+
+.nav-container-menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    position: relative;
+    left: 0%;
+}
+
+.nav-menu-user {
+    display: flex;
+    position: relative;
+    right: auto;
+    margin-right: 5px;
+}
+
+.nav-menu__list {
+    display: inline;
+    text-align: left;
+}
+
+.nav-menu__list {
+    margin: 10px 0px 0px 5px;
+    left: 10px;
+}
+
+.nav-menu li {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    color: #FFFFFF;
+}
+
+.nav-user__list {
+    display: inline;
+    margin: 10px 0px 0px 5px;
+    padding-right: 10px;
+}
+
+.nav-user__list li {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.nav-user__list li a {
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    color: #FFFFFF;
+}
+
+
+/*---------------*/
+/* CONTENT INDEX */
+/*---------------*/
+
+.content_container {
+    position: relative;
+    flex-direction: row;
+    max-width: 1220px;
+    background-color: #E7E6E6;
+    margin: 0 auto;
+
+}
+
+.index-slider {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    background-color: #E7E6E6;
+}
+
+.index-slider img {
+    display: block;
+}
+
+.index-slider .fa-angles-left {
+    position: absolute;
+    bottom: 45%;
+    left: 0%;
+    padding: 20px;
+    background-color: #E7E6E6;
+}
+
+.index-slider .fa-angles-right {
+    position: absolute;
+    bottom: 45%;
+    right: 0%;
+    padding: 20px;
+    background-color: #E7E6E6;
+}
+
+.content_title {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    background-color: #E7E6E6;
+}
+
+.content_title p {
+    font-family: 'Hubballi', cursive;
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+}
+
+div.publicaciones-nuevas {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    background-color: #E7E6E6;
+}
+
+.publicaciones-nuevas ul {
+    display: inline-block;
+}
+
+.publicacion__item {
+    left: 2.5%;
+}
+
+.publicacion {
+    width: auto;
+}
+
+.publicacion li {
+    display: inline-block;
+    position: relative;
+    margin: 20px 20px;
+}
+
+.publicacion li a {
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    color: #000000;
+}
+
+.publicacion__item .fa-heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 10px 0 0;
+    color: #ff0202;
+    z-index: 100;
+}
+
+.publicacion__item img {
+    display: block;
+    width: 150px;
+    height: 195px;
+}
+
+.publicacion__item p {
+    display: block;
+    width: 150px;
+    text-align: left;
+    padding-top: 3px;
+}
+
+/*-------------------*/
+/* CONTENT SERVICIOS */
+/*-------------------*/
+.content_container {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: rgb(231, 230, 230);
+    align-content: center;
+}
+
+.servicios_content_title {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.servicios_content_title p {
+    font-family: 'Hubballi', cursive;
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+}
+
+.servicios_search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.servicios_search__bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    position: relative;
+    width: 75%;
+    margin-right: 5px;
+}
+
+.servicios_search__bar input {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.servicios_search__filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-left: 10px;
+}
+
+.servicios_search__filter a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.servicios_search__bar input {
+    margin-right: 10px;
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.servicios_search__bar button {
+    background-color: #c5c7c5;
+    color: rgb(0, 0, 0);
+    padding: 2px 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.servicios_list {
+    margin: 20px 20px 0 20px;
+}
+
+.servicios_list li {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.servicios_list__item__url {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+
+.servicios_list__item__url img {
+    width: 150px;
+    height: 200px;
+}
+
+.servicios_list__item___description {
+    display: inline-block;
+    position: absolute;
+    right: auto;
+    margin-left: 20px;
+    padding: 10px 0 20px 0;
+}
+
+.servicios_list__item___description__title {
+    font-family: 'Hubballi', cursive;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.servicios_list__item___description p {
+    display: block;
+    font-family: 'Hubballi', cursive;
+    padding-bottom: 10px;
+}
+
+
+/*-------------------*/
+/* CONTENT PRODUCTOS */
+/*-------------------*/
+.productos-container {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: rgb(231, 230, 230);
+    align-content: center;
+}
+
+.productos_content_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.productos_content_title p {
+    font-family: 'Hubballi', cursive;
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+}
+
+.productos_search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.productos_search__bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    position: relative;
+    width: 75%;
+    margin-right: 5px;
+}
+
+.productos_search__bar input {
+    margin-right: 10px;
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.productos_search__bar button {
+    background-color: #c5c7c5;
+    color: rgb(0, 0, 0);
+    padding: 2px 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.productos_search__filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-left: 10px;
+}
+
+.productos_search__filter a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.productos {
+    margin: 0 auto;
+}
+
+.productos ul {
+    display: inline-block;
+}
+
+.producto-list {
+    left: 2.5%;
+}
+
+.productos li {
+    display: inline-block;
+    position: relative;
+    margin: 20px 20px;
+}
+
+.productos li a {
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    color: #000000;
+}
+
+.producto-item__description__title {
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.productos .producto-item__precio {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    padding: 20px 10px 0 0;
+    color: #ff0202;
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 100;
+}
+
+.producto-list img {
+    display: block;
+    width: 150px;
+    height: 200px;
+}
+
+.producto-item__description {
+    display: block;
+    width: 150px;
+    text-align: left;
+    padding-top: 3px;
+}
+
+/*-------------*/
+/* CONTENT FAQ */
+/*-------------*/
+.faq_container {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: rgb(231, 230, 230);
+    align-content: center;
+}
+
+.faq_container_content_title {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    font-weight: 700;
+
+}
+
+.faq_container_content_title p {
+    font-family: 'Hubballi', cursive;
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+}
+
+.faq_container_content {
+    display: grid;
+    grid-auto-rows: auto;
+    place-items: center;
+    align-items: baseline;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 0px;
+}
+
+.faq_container_preguntas__list_servicios {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.faq_container_preguntas__list_productos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.faq_container_preguntas__list_cuentas_configuracion {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#faqs_section_servicio,
+#faqs_section_producto,
+#faqs_section_cta_conf {
+    font-family: 'Hubballi', cursive;
+    font-weight: 700;
+}
+
+.faq_container_preguntas__items {
+    display: flex;
+    justify-content: center;
+    font-family: 'Hubballi', cursive;
+    list-style-type: none;
+    margin: 0 10px 10px 10px;
+    border-bottom: #FFAD66 1px solid;
+}
+
+.faq_container_preguntas__items a {
+    text-decoration: none;
+    color: #575757;
+}
+
+
+/*------------------*/
+/* CONTENT CONTACTO */
+/*------------------*/
+.contact_container {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: rgb(231, 230, 230);
+    align-content: center;
+}
+
+h3 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Hubballi', cursive;
+}
+
+article {
+    border-radius: 5px;
+    background-color: rgb(231, 230, 230);
+    padding: 20px;
+}
+
+.contact_form input[type=text],
+.contact_form input[type=email],
+.contact_form input[type=number],
+.contact_form select,
+.contact_form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact_form textarea {
+    resize: none;
+    height: 250px;
+}
+
+.contact_form input[type=submit] {
+    width: 100%;
+    background-color: #9ff3a2;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_form input[type=reset] {
+    width: 100%;
+    background-color: #fa9595;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact_form input[type=reset]:hover {
+    background-color: #ad3a3a;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.contact_form input[type=submit]:hover {
+    background-color: #2a8b2f;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+/*--------*/
+/* FOOTER */
+/*--------*/
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    max-width: 1220px;
+    background-color: #16385a;
+    margin: 0 auto;
+}
+
+.footer_redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.nav-redes li {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    padding: 5px 5px;
+}
+
+.nav-redes li a {
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    color: #FFFFFF;
+}
+
+.nav-footer-menu {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 50px;
+}
+
+.nav-footer-menu li {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+.nav-footer-menu li a {
+    text-decoration: none;
+    font-family: 'Hubballi', cursive;
+    color: #FFFFFF;
+}
+
+.footer-info-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15em;
+    padding: 0 0 0 20px;
+    margin: 0;
+    block-size: auto;
+}
+
+.footer-info-contacto__title {
+    color: #FFFFFF;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.footer-info-contacto__text {
+    color: #FFFFFF;
+    font-family: 'Hubballi', cursive;
+    padding-bottom: 5px;
+}
+
+/*---------------------------------*/
+/*             TABLET              */
+/*---------------------------------*/
+@media screen and (min-width: 650px) and (max-width: 890px) {
+
+    /*---------*/
+    /* CONTENT */
+    /*---------*/
+    .publicacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .publicacion li {
+        display: inline-block;
+        position: relative;
+        margin: 20px 45px;
+    }
+
+    /*--------*/
+    /* FAQ    */
+    /*--------*/
+
+    .faq_container_content {
+        display: grid;
+        grid-auto-rows: auto;
+        place-items: center;
+        align-items: baseline;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 10px 0px;
+        grid-template-areas: 
+            "title_servicio"
+            "faqs_servicios"
+            "title_producto"
+            "faqs_productos"
+            "title_cta_conf"
+            "faqs_cuentas_configuracion"
+        ;
+    }
+
+    #faqs_section_servicio {
+        grid-area: title_servicio;
+    }
+
+    #faqs_section_producto {
+        grid-area: title_producto;
+    }
+
+    #faqs_section_cta_conf {
+        grid-area: title_cta_conf;
+    }
+
+    #faq_container_preguntas__list_servicios {
+        grid-area: faqs_servicios;
+    }
+
+    #faq_container_preguntas__list_productos {
+        grid-area: faqs_productos;
+    }
+
+    #faq_container_preguntas__list_cuentas_configuracion {
+        grid-area: faqs_cuentas_configuracion;
+    }
+
+    .faq_container_preguntas__list_servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_productos {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_cuentas_configuracion {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #faqs_section_servicio,
+    #faqs_section_producto,
+    #faqs_section_cta_conf {
+        font-family: 'Hubballi', cursive;
+        font-weight: 700;
+    }
+
+    .faq_container_preguntas__items {
+        display: flex;
+        justify-content: center;
+        font-family: 'Hubballi', cursive;
+        list-style-type: none;
+        margin: 0 10px 10px 10px;
+        border-bottom: #FFAD66 1px solid;
+    }
+
+    .faq_container_preguntas__items a {
+        text-decoration: none;
+        color: #575757;
+    }
+
+
+    /*--------*/
+    /* FOOTER */
+    /*--------*/
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        max-width: 768px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .footer_redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 25px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-redes li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 5px 5px;
+    }
+
+    .nav-redes li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-footer-menu {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        padding: 25px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-footer-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .nav-footer-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .footer-info-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .footer-info-contacto__title {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .footer-info-contacto__text {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        padding: 0 0 5px 30px;
+    }
+}
+
+/*---------------------------------*/
+/*             MOBILE              */
+/*---------------------------------*/
+@media screen and (min-width: 500px) and (max-width: 649px) {
+
+    /*--------*/
+    /* HEADER */
+    /*--------*/
+    .nav-container {
+        position: relative;
+        flex-direction: column;
+        max-width: 650px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .nav-logo img {
+        position: relative;
+        left: 10px;
+        height: 52px;
+        top: 11px;
+        width: 114px;
+        margin: 5px;
+    }
+
+    .nav-container-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-menu-user {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: auto;
+    }
+
+    .nav-menu__list {
+        display: inline;
+    }
+
+    .nav-menu__list {
+        margin: 10px 0px 0px 5px;
+        left: 10px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-user__list {
+        display: inline;
+        margin: 0px 0px 0px 5px;
+        padding-right: 10px;
+    }
+
+    .nav-user__list li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .nav-user__list li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    /*---------*/
+    /*  INDEX  */
+    /*---------*/
+    .publicacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .publicacion li {
+        display: inline-block;
+        position: relative;
+        margin: 20px 0px 20px 10px;
+        left: 4%;
+    }
+
+    /*--------*/
+    /* FAQ    */
+    /*--------*/
+    .faq_container_content {
+        display: grid;
+        grid-auto-rows: auto;
+        place-items: center;
+        align-items: baseline;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 10px 0px;
+        grid-template-areas: 
+            "title_servicio"
+            "faqs_servicios"
+            "title_producto"
+            "faqs_productos"
+            "title_cta_conf"
+            "faqs_cuentas_configuracion"
+        ;
+    }
+
+    #faqs_section_servicio {
+        grid-area: title_servicio;
+    }
+
+    #faqs_section_producto {
+        grid-area: title_producto;
+    }
+
+    #faqs_section_cta_conf {
+        grid-area: title_cta_conf;
+    }
+
+    #faq_container_preguntas__list_servicios {
+        grid-area: faqs_servicios;
+    }
+
+    #faq_container_preguntas__list_productos {
+        grid-area: faqs_productos;
+    }
+
+    #faq_container_preguntas__list_cuentas_configuracion {
+        grid-area: faqs_cuentas_configuracion;
+    }
+
+    .faq_container_preguntas__list_servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_productos {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_cuentas_configuracion {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #faqs_section_servicio,
+    #faqs_section_producto,
+    #faqs_section_cta_conf {
+        font-family: 'Hubballi', cursive;
+        font-weight: 700;
+    }
+
+    .faq_container_preguntas__items {
+        display: flex;
+        justify-content: center;
+        font-family: 'Hubballi', cursive;
+        list-style-type: none;
+        margin: 0 10px 10px 10px;
+        border-bottom: #FFAD66 1px solid;
+    }
+
+    .faq_container_preguntas__items a {
+        text-decoration: none;
+        color: #575757;
+    }
+
+    /*--------*/
+    /* FOOTER */
+    /*--------*/
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        max-width: 768px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .footer_redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-redes li {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .nav-redes li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-footer-menu {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-footer-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .nav-footer-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .footer-info-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .footer-info-contacto__title {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .footer-info-contacto__text {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        padding: 0 0 5px 30px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 499px) {
+
+    /*--------*/
+    /* HEADER */
+    /*--------*/
+    .nav-container {
+        position: relative;
+        flex-direction: column;
+        max-width: 650px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .nav-logo img {
+        position: relative;
+        left: 10px;
+        height: 52px;
+        top: 11px;
+        width: 114px;
+        margin: 5px;
+    }
+
+    .nav-container-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-menu-user {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: auto;
+    }
+
+    .nav-menu__list {
+        display: inline;
+    }
+
+    .nav-menu__list {
+        margin: 10px 0px 0px 5px;
+        left: 10px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-user__list {
+        display: inline;
+        margin: 0px 0px 0px 5px;
+        padding-right: 10px;
+    }
+
+    .nav-user__list li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .nav-user__list li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    /*---------*/
+    /* CONTENT */
+    /*---------*/
+    .publicacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .publicacion li {
+        display: inline-block;
+        position: relative;
+        margin: 20px 0px 20px 10px;
+        left: 7.5%;
+    }
+
+    /*--------*/
+    /* FAQ    */
+    /*--------*/
+    .faq_container_content {
+        display: grid;
+        grid-auto-rows: auto;
+        place-items: center;
+        align-items: baseline;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 10px 0px;
+        grid-template-areas: 
+            "title_servicio"
+            "faqs_servicios"
+            "title_producto"
+            "faqs_productos"
+            "title_cta_conf"
+            "faqs_cuentas_configuracion"
+        ;
+    }
+
+    #faqs_section_servicio {
+        grid-area: title_servicio;
+    }
+
+    #faqs_section_producto {
+        grid-area: title_producto;
+    }
+
+    #faqs_section_cta_conf {
+        grid-area: title_cta_conf;
+    }
+
+    #faq_container_preguntas__list_servicios {
+        grid-area: faqs_servicios;
+    }
+
+    #faq_container_preguntas__list_productos {
+        grid-area: faqs_productos;
+    }
+
+    #faq_container_preguntas__list_cuentas_configuracion {
+        grid-area: faqs_cuentas_configuracion;
+    }
+
+    .faq_container_preguntas__list_servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_productos {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_cuentas_configuracion {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #faqs_section_servicio,
+    #faqs_section_producto,
+    #faqs_section_cta_conf {
+        font-family: 'Hubballi', cursive;
+        font-weight: 700;
+    }
+
+    .faq_container_preguntas__items {
+        display: flex;
+        justify-content: center;
+        font-family: 'Hubballi', cursive;
+        list-style-type: none;
+        margin: 0 10px 10px 10px;
+        border-bottom: #FFAD66 1px solid;
+    }
+
+    .faq_container_preguntas__items a {
+        text-decoration: none;
+        color: #575757;
+    }
+
+    /*--------*/
+    /* FOOTER */
+    /*--------*/
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        max-width: 768px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .footer_redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-redes li {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .nav-redes li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-footer-menu {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-footer-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .nav-footer-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .footer-info-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .footer-info-contacto__title {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .footer-info-contacto__text {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        padding: 0 0 5px 30px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 375px) {
+
+    /*--------*/
+    /* HEADER */
+    /*--------*/
+    .nav-container {
+        position: relative;
+        flex-direction: column;
+        max-width: 650px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .nav-logo img {
+        position: relative;
+        left: 10px;
+        height: 52px;
+        top: 11px;
+        width: 114px;
+        margin: 5px;
+    }
+
+    .nav-container-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-menu-user {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: auto;
+    }
+
+    .nav-menu__list {
+        display: inline;
+    }
+
+    .nav-menu__list {
+        margin: 10px 0px 0px 5px;
+        left: 10px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-user__list {
+        display: inline;
+        margin: 0px 0px 0px 5px;
+        padding-right: 10px;
+    }
+
+    .nav-user__list li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .nav-user__list li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    /*---------*/
+    /* CONTENT */
+    /*---------*/
+    .publicaciones-nuevas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    .publicacion {
+        display: grid;
+        height: 100%;
+        max-height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+    }
+
+    .publicacion li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    /*--------*/
+    /* FAQ    */
+    /*--------*/
+    .faq_container_content {
+        display: grid;
+        grid-auto-rows: auto;
+        place-items: center;
+        align-items: baseline;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 10px 0px;
+        grid-template-areas: 
+            "title_servicio"
+            "faqs_servicios"
+            "title_producto"
+            "faqs_productos"
+            "title_cta_conf"
+            "faqs_cuentas_configuracion"
+        ;
+    }
+
+    #faqs_section_servicio {
+        grid-area: title_servicio;
+    }
+
+    #faqs_section_producto {
+        grid-area: title_producto;
+    }
+
+    #faqs_section_cta_conf {
+        grid-area: title_cta_conf;
+    }
+
+    #faq_container_preguntas__list_servicios {
+        grid-area: faqs_servicios;
+    }
+
+    #faq_container_preguntas__list_productos {
+        grid-area: faqs_productos;
+    }
+
+    #faq_container_preguntas__list_cuentas_configuracion {
+        grid-area: faqs_cuentas_configuracion;
+    }
+
+    .faq_container_preguntas__list_servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_productos {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_cuentas_configuracion {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #faqs_section_servicio,
+    #faqs_section_producto,
+    #faqs_section_cta_conf {
+        font-family: 'Hubballi', cursive;
+        font-weight: 700;
+    }
+
+    .faq_container_preguntas__items {
+        display: flex;
+        justify-content: center;
+        font-family: 'Hubballi', cursive;
+        list-style-type: none;
+        margin: 0 10px 10px 10px;
+        border-bottom: #FFAD66 1px solid;
+    }
+
+    .faq_container_preguntas__items a {
+        text-decoration: none;
+        color: #575757;
+    }
+
+    /*--------*/
+    /* FOOTER */
+    /*--------*/
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        max-width: 768px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .footer_redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-redes li {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .nav-redes li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-footer-menu {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-footer-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .nav-footer-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .footer-info-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .footer-info-contacto__title {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .footer-info-contacto__text {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        padding: 0 0 5px 30px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+
+    /*--------*/
+    /* HEADER */
+    /*--------*/
+    .nav-container {
+        position: relative;
+        flex-direction: column;
+        max-width: 360px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .nav-logo img {
+        position: relative;
+        left: 10px;
+        height: 52px;
+        top: 11px;
+        width: 114px;
+        margin: 5px;
+    }
+
+    .nav-container-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-menu-user {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: auto;
+    }
+
+    .nav-menu__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-menu__list {
+        margin: 10px 0px 0px 5px;
+        left: 10px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+    .nav-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-user__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0px 0px 0px 5px;
+        padding-right: 10px;
+    }
+
+    .nav-user__list li {
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .nav-user__list li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    /*---------*/
+    /* CONTENT */
+    /*---------*/
+
+    .publicacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+    }
+
+    .publicacion li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 45%;
+        margin: 20px auto;
+    }
+
+    /*-----------*/
+    /* SERVICIOS */
+    /*-----------*/
+
+    .servicios_search__filter {
+        display: none;
+    }
+
+    .servicios_list {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 0 0;
+        width: 100%;
+    }
+
+    .servicios_list li {
+        display: grid;
+        height: 100%;
+        max-height: 100%;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "imagenServ"
+            "descripcion"
+    }
+
+    .servicios_list__item__url img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .servicios_list__item__url {
+        grid-area: imagenServ;
+    }
+
+    .servicios_list__item___description {
+        grid-area: descripcion;
+    }
+
+    .servicios_list__item___description__title {
+        font-family: 'Hubballi', cursive;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .servicios_list__item___description p {
+        display: block;
+        font-family: 'Hubballi', cursive;
+        padding-bottom: 10px;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 150px;
+    }
+
+    /*-----------*/
+    /* PRODUCTOS */
+    /*-----------*/
+
+    .productos_search {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .productos_search__bar {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        position: relative;
+        margin-right: 5px;
+    }
+
+    .productos_search__filter {
+        display: none;
+    }
+
+    .productos {
+        margin: 0 auto;
+        align-content: center;
+        padding: 0 20px 20px 20px;
+    }
+
+    .producto-list {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+
+    .productos li {
+        display: inline-block;
+        position: relative;
+        margin: 20px 20px;
+    }
+
+    .productos li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #000000;
+    }
+
+    .producto-item__description__title {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .productos .producto-item__precio {
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+        padding: 20px 10px 0 0;
+        color: #ff0202;
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        font-size: 18px;
+        font-weight: 700;
+        z-index: 100;
+    }
+
+    .producto-list img {
+        display: block;
+        width: 150px;
+        height: 200px;
+    }
+
+    .producto-item__description {
+        display: block;
+        width: 150px;
+        text-align: left;
+        padding-top: 3px;
+    }
+
+    /*--------*/
+    /* FAQ    */
+    /*--------*/
+    .faq_container_content {
+        display: grid;
+        grid-auto-rows: auto;
+        place-items: center;
+        align-items: baseline;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 10px 0px;
+        grid-template-areas: 
+            "title_servicio"
+            "faqs_servicios"
+            "title_producto"
+            "faqs_productos"
+            "title_cta_conf"
+            "faqs_cuentas_configuracion"
+        ;
+    }
+
+    #faqs_section_servicio {
+        grid-area: title_servicio;
+    }
+
+    #faqs_section_producto {
+        grid-area: title_producto;
+    }
+
+    #faqs_section_cta_conf {
+        grid-area: title_cta_conf;
+    }
+
+    #faq_container_preguntas__list_servicios {
+        grid-area: faqs_servicios;
+    }
+
+    #faq_container_preguntas__list_productos {
+        grid-area: faqs_productos;
+    }
+
+    #faq_container_preguntas__list_cuentas_configuracion {
+        grid-area: faqs_cuentas_configuracion;
+    }
+
+    .faq_container_preguntas__list_servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_productos {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .faq_container_preguntas__list_cuentas_configuracion {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #faqs_section_servicio,
+    #faqs_section_producto,
+    #faqs_section_cta_conf {
+        font-family: 'Hubballi', cursive;
+        font-weight: 700;
+    }
+
+    .faq_container_preguntas__items {
+        display: flex;
+        justify-content: center;
+        font-family: 'Hubballi', cursive;
+        list-style-type: none;
+        margin: 0 10px 10px 10px;
+        border-bottom: #FFAD66 1px solid;
+    }
+
+    .faq_container_preguntas__items a {
+        text-decoration: none;
+        color: #575757;
+    }
+
+    
+    /*--------*/
+    /* FOOTER */
+    /*--------*/
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        max-width: 768px;
+        background-color: #16385a;
+        margin: 0 auto;
+    }
+
+    .footer_redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-redes li {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+
+    .nav-redes li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .nav-footer-menu {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        padding: 25px 0px;
+        border-bottom: #FFFFFF solid 1px;
+    }
+
+    .nav-footer-menu li {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .nav-footer-menu li a {
+        text-decoration: none;
+        font-family: 'Hubballi', cursive;
+        color: #FFFFFF;
+    }
+
+    .footer-info-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .footer-info-contacto__title {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+
+    .footer-info-contacto__text {
+        color: #FFFFFF;
+        font-family: 'Hubballi', cursive;
+        padding: 0 0 5px 30px;
+    }
+}
