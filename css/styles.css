@@ -172,11 +172,14 @@ body {
     height: 16px;
     background: #fff;
     border-radius: 50px;
-    margin: 0 .2em 1em;
+    margin: 0 .5em 1em;
 }
 
 .menu label:hover {
     background: #FFAD66;
+    box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 1);
 }
 
 .slide {
