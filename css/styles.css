@@ -200,6 +200,11 @@ div.publicaciones-nuevas {
 
 .publicacion__item {
     left: 2.5%;
+    transition: transform .5s;
+}
+
+.publicacion__item:hover {
+    transform: scale(1.1);
 }
 
 .publicacion {
