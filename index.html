@@ -19,15 +19,14 @@
 <body>
 	<!-- Logo + Nav Menu -->
 	<div class="header">
-		<nav class="navbar navbar-expand-lg" style="max-width: 1220px; margin:auto;">
+		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img src="img/navbar/Logo.png" alt="">
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarMenu" aria-controls="navbarMenu"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span><i class="fa-solid fa-align-justify fa-lg" style="color: white;"></i></span>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+					aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span><i class="fa-solid fa-bars fa-lg" style="color: white;"></i></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarMenu">
 					<ul class="navbar-nav me-auto">
@@ -181,52 +180,81 @@
 
 	<!-- Footer -->
 	<div class="footer">
-		<div class="footer-container">
-			<div class="footer_redes">
-				<div class="nav-redes">
-					<ul class="nav-redes__list">
-						<li class="nav-menu__item">
-							<a href="#" class="nav-redes__link"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#" class="nav-redes__link"><i class="fa-brands fa-twitter"></i> Twitter</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#" class="nav-redes__link"><i class="fa-brands fa-instagram"></i> Instagram</a>
-						</li>
-						<li class="nav-menu__item">
-							<a href="#" class="nav-redes__link"><i class="fa-brands fa-tiktok"></i> Tik Tok</a>
-						</li>
-					</ul>
+		<div class="container-fluid my-3">
+			<div class="text-center text-white">
+				<div class="container-fluid p-4">
+
+					<!-- Redes sociales -->
+					<section class="mb-4">
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+								class="fab fa-facebook-f"></i></a>
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+								class="fab fa-twitter"></i></a>
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+								class="fab fa-google"></i></a>
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+								class="fab fa-instagram"></i></a>
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+								class="fab fa-linkedin-in"></i></a>
+						<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+								class="fab fa-github"></i></a>
+					</section>
+
+					<!-- Subscripcion: Form -->
+					<section class="">
+						<form action="">
+							<div class="row d-flex justify-content-center">
+								<div class="col-auto">
+									<p class="pt-2">
+										<strong>Subscribite para promociones y actualizaciones</strong>
+									</p>
+								</div>
+
+								<!--Subscripcion: Correo-->
+								<div class="col-md-5 col-12">
+									<div class="form-outline form-white mb-4">
+										<input type="email" id="subscripcion" class="form-control" />
+										<label class="form-label" for="subscripcion">Correo electronico</label>
+									</div>
+								</div>
+
+								<!--Subscripcion: Boton-->
+								<div class="col-auto">
+									<button type="submit" class="btn btn-outline-light mb-4">
+										Confirmar
+									</button>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<!-- Menu -->
+					<section class="">
+						<div class="row justify-content-md-center">
+							<div class="col-md-auto mb-4 mb-md-0">
+								<ul class="list-unstyled mb-0">
+									<li class="nav-item">
+										<a href="index.html" class="nav-link active">Inicio</a>
+									</li>
+									<li class="nav-item">
+										<a href="pages/servicios.html" class="nav-link">Servicios</a>
+									</li>
+									<li class="nav-item">
+										<a href="pages/productos.html" class="nav-link">Productos</a>
+									</li>
+									<li class="nav-item">
+										<a href="pages/faq.html" class="nav-link">FAQ</a>
+									</li>
+									<li class="nav-item" i>
+										<a href="pages/contacto.html" class="nav-link">Contacto</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
-			<div class="nav-footer-menu">
-				<ul class="footer-nav-menu__list">
-					<li class="footer-nav-menu__item">
-						<a href="index.html" class="nav-menu__link">Inicio</a>
-					</li>
-					<li class="footer-nav-menu__item">
-						<a href="pages/servicios.html" class="nav-menu__link">Servicios</a>
-					</li>
-					<li class="footer-nav-menu__item">
-						<a href="pages/productos.html" class="nav-menu__link">Productos</a>
-					</li>
-					<li class="footer-nav-menu__item">
-						<a href="pages/faq.html" class="nav-menu__link">FAQ</a>
-					</li>
-					<li class="footer-nav-menu__item" i>
-						<a href="pages/contacto.html" class="nav-menu__link">Contacto</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer-info-contacto">
-				<p class="footer-info-contacto__title">INFO DE CONTACTO</p>
-				<p class="footer-info-contacto__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consectetur
-					nostrum error obcaecati, molestias totam iste suscipit possimus
-					aperiam sit voluptatibus! Aliquam
-				</p>
-			</div>
+
 		</div>
 	</div>
 </body>
