@@ -47,70 +47,28 @@ body {
 /* HEADER */
 /*--------*/
 
-.nav-container {
-    position: relative;
-    flex-direction: row;
-    max-width: 1220px;
-    background-color: #16385a;
-    margin: 0 auto;
-}
-
-.nav-logo img {
-    position: relative;
-    left: 10px;
+.navbar-brand img {
     height: 52px;
-    top: 11px;
     width: 114px;
-    margin: 5px;
 }
 
-.nav-container-menu {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-}
-
-.nav-menu {
-    display: flex;
-    position: relative;
-    left: 0%;
-}
-
-.nav-menu-user {
-    display: flex;
-    position: relative;
-    right: auto;
-    margin-right: 5px;
-}
-
-.nav-menu__list {
-    display: inline;
-    text-align: left;
-}
-
-.nav-menu__list {
-    margin: 10px 0px 0px 5px;
-    left: 10px;
-}
-
-.nav-menu li {
+.nav-item {
     display: inline-block;
     position: relative;
-    font-size: 18px;
-    padding: 10px 10px;
+    padding: 0px;
 }
 
-.nav-menu li a {
+.nav-item a {
     text-decoration: none;
+    font-size: 18px;
     font-family: 'Hubballi', cursive;
     color: #FFFFFF;
 }
 
 .nav-user__list {
     display: inline;
-    margin: 10px 0px 0px 5px;
     padding-right: 10px;
+    margin: 0;
 }
 
 .nav-user__list li {
