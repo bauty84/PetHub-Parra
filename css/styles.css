@@ -69,6 +69,11 @@ body {
     color: #FFFFFF;
 }
 
+.nav-user-menu {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
 .nav-user__list {
     display: inline;
     padding-right: 10px;
@@ -97,7 +102,7 @@ body {
     position: relative;
     flex-direction: row;
     max-width: 1220px;
-    background-color: #E7E6E6;
+    background-color: #EDEDED;
     margin: 0 auto;
     padding-top: 20px;
 
@@ -108,7 +113,7 @@ body {
     max-width: 1220px;
     margin: 10px auto;
     padding: 20px 0 20px 0;
-    background-color: #E7E6E6;
+    background-color: #EDEDED;
 }
 
 .index-slider {
@@ -176,7 +181,6 @@ body {
     background-image: url("../img/index_slider/img_003.jpg");
 }
 
-
 .content_title {
     display: inline-block;
     width: 100%;
@@ -216,8 +220,10 @@ div.publicaciones-nuevas {
     transform: scale(1.1);
 }
 
-.publicacion {
+ul.publicacion {
     width: auto;
+    padding: 0;
+    margin: auto;
 }
 
 .publicacion li {
@@ -345,6 +351,7 @@ div.publicaciones-nuevas {
     display: inline-block;
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .servicios_list__item__url {
@@ -494,7 +501,7 @@ div.publicaciones-nuevas {
 
 .productos .producto-item__precio {
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     right: 0;
     padding: 20px 10px 0 0;
     color: #ff0202;
