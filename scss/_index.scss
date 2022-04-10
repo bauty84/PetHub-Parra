@@ -1,0 +1,132 @@
+.content_container {
+    position: relative;
+    flex-direction: row;
+    max-width: 1220px;
+    background-color: #EDEDED;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.index-slider {
+    position: relative;
+    max-width: 1220px;
+    margin: 10px auto;
+    padding: 20px 0 20px 0;
+    background-color: #EDEDED;
+    display: block;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border-radius: 50px;
+        margin: 0 .5em 1em;
+
+        &:hover {
+            background: $default_orange_site;
+            box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 1);
+            -webkit-box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 1);
+            -moz-box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+}
+
+[id^="slide"]:checked+.slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+
+.slide-1 {
+    background-image: url("../img/index_slider/img_001.jpg");
+}
+
+.slide-2 {
+    background-image: url("../img/index_slider/img_002.jpg");
+}
+
+.slide-3 {
+    background-image: url("../img/index_slider/img_003.jpg");
+}
+
+.content_title {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    align-content: center;
+    font-weight: 500;
+    background-color: #E7E6E6;
+
+    &::after {
+        content: "";
+        width: 80%;
+        height: 2px;
+        background-color: $default_orange_site;
+        position: absolute;
+        bottom: 0px;
+        left: 10%;
+    }
+
+    p {
+        font-size: 28px;
+        position: relative;
+        text-align: center;
+    }
+}
+
+div.publicaciones-nuevas {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    background-color: #E7E6E6;
+}
+
+.publicaciones {
+    margin: 0 auto;
+}
+
+ul.publicacion {
+    display: inline-block;
+    padding: 0;
+}
+
+.publicacion li {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}

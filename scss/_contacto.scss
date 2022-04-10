@@ -1,0 +1,104 @@
+.contact_container {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: rgb(231, 230, 230);
+    align-content: center;
+}
+
+h3 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+article {
+    border-radius: 5px;
+    background-color: rgb(231, 230, 230);
+    padding: 0 20px 20px 20px;
+}
+
+.info_contacto p {
+    display: inline-block;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.contact_form {
+    input {
+
+        &[type=text],
+        &[type=email],
+        &[type=number] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    }
+
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: none;
+        height: 250px;
+    }
+
+    input {
+        &[type=submit] {
+            width: 100%;
+            background-color: #419244;
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        &[type=reset] {
+            width: 100%;
+            background-color: #8a3d3d;
+            color: rgb(255, 251, 251);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e96161;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+            }
+        }
+
+        &[type=submit]:hover {
+            background-color: #6bc570;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+    }
+}

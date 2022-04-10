@@ -1,0 +1,61 @@
+.faq_container {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: rgb(231, 230, 230);
+    align-content: center;
+}
+
+.faq_container_content_title {
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    font-weight: 700;
+
+    p {
+        font-size: 28px;
+        position: relative;
+        text-align: center;
+    }
+}
+
+.faq_container_content {
+    display: grid;
+    grid-auto-rows: auto;
+    place-items: center;
+    align-items: baseline;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 0px;
+}
+
+#faq_container_preguntas__list_servicios,
+#faq_container_preguntas__list_productos,
+#faq_container_preguntas__list_cuentas_configuracion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+#faqs_section_servicio,
+#faqs_section_producto,
+#faqs_section_cta_conf {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.faq_container_preguntas__items {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 10px 10px 10px;
+    padding-bottom: 5px;
+    border-bottom: #FFAD66 1px solid;
+
+    a {
+        text-decoration: none;
+        color: #575757;
+    }
+}
