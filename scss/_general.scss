@@ -3,6 +3,11 @@
 $default_blue_site: #16385a;
 $default_orange_site: #FFAD66;
 
+// Propiedades animacion favorito en cards
+$keyframe_fav_btn_scale_zoom_out: scale(0.9);
+$keyframe_fav_btn_scale_zoom_in: scale(1);
+$keyframe_fav_btn_shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+
 html {
     height: 100%;
     max-height: 100%;
@@ -73,7 +78,7 @@ body {
     font-size: 14px;
 
     &:hover {
-        color: #fff;
+        color: #FFFFFF;
         background: #E26D5C;
         animation: pulse 1.5s infinite;
         -webkit-animation: pulse 1.5s infinite;
@@ -83,13 +88,13 @@ body {
 .card-heading {
     font-size: 16px;
     font-weight: bold;
-    background: #fff;
+    background: #FFFFFF;
     padding: 10px 15px;
 }
 
 .card-text {
     padding: 10px 15px;
-    background: #fff;
+    background: #FFFFFF;
     font-size: 14px;
     color: #1f1f1f;
 
@@ -107,62 +112,62 @@ body {
     width: 100%;
     font-size: 16px;
     background-color: $default_orange_site;
-    color: #fff;
+    color: #FFFFFF;
     border-radius: 0 0 8px 8px;
 
     &:hover {
         text-decoration: none;
         background-color: $default_blue_site;
-        color: #fff;
+        color: #FFFFFF;
     }
 }
 
 @keyframes pulse {
     0% {
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
+        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
+        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
+        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
+        transform: $keyframe_fav_btn_scale_zoom_out;
     }
 
     70% {
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+        -moz-transform: $keyframe_fav_btn_scale_zoom_in;
+        -ms-transform: $keyframe_fav_btn_scale_zoom_in;
+        -webkit-transform: $keyframe_fav_btn_scale_zoom_in;
+        transform: $keyframe_fav_btn_scale_zoom_in;
+        box-shadow: $keyframe_fav_btn_shadow;
     }
 
     100% {
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
+        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
+        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
+        transform: $keyframe_fav_btn_scale_zoom_out;
+        box-shadow: $keyframe_fav_btn_shadow;
     }
 }
 
 @-webkit-keyframes pulse {
     0% {
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
+        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
+        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
+        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
+        transform: $keyframe_fav_btn_scale_zoom_out;
     }
 
     70% {
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+        -moz-transform: $keyframe_fav_btn_scale_zoom_in;
+        -ms-transform: $keyframe_fav_btn_scale_zoom_in;
+        -webkit-transform: $keyframe_fav_btn_scale_zoom_in;
+        transform: $keyframe_fav_btn_scale_zoom_in;
+        box-shadow: $keyframe_fav_btn_shadow;
     }
 
     100% {
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
+        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
+        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
+        transform: $keyframe_fav_btn_scale_zoom_out;
+        box-shadow: $keyframe_fav_btn_shadow;
     }
 }
