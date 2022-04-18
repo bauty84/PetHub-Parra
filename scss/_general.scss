@@ -3,6 +3,7 @@
 @import "_variables";
 
 @import "_mixins";
+@import "_cards";
 
 html {
     height: 100%;
@@ -45,80 +46,4 @@ body {
 .navbar-expand-lg {
     max-width: 1220px;
     margin: auto;
-}
-
-/* Estilo de Tarjetas */
-
-.card-sl {
-    @include cards-sl;
-    .card-image {
-        @include cards-image;
-    }
-    
-    .card-action {
-        @include cards-action;
-    }
-    
-    .card-heading {
-        @include cards-heading;
-    }
-    
-    .card-text {
-        @include cards-text;
-    }
-    
-    .card-button {
-        @include cards-button;
-    }
-    
-}
-
-@keyframes pulse {
-    0% {
-        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
-        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
-        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
-        transform: $keyframe_fav_btn_scale_zoom_out;
-    }
-
-    70% {
-        -moz-transform: $keyframe_fav_btn_scale_zoom_in;
-        -ms-transform: $keyframe_fav_btn_scale_zoom_in;
-        -webkit-transform: $keyframe_fav_btn_scale_zoom_in;
-        transform: $keyframe_fav_btn_scale_zoom_in;
-        box-shadow: $keyframe_fav_btn_shadow;
-    }
-
-    100% {
-        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
-        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
-        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
-        transform: $keyframe_fav_btn_scale_zoom_out;
-        box-shadow: $keyframe_fav_btn_shadow;
-    }
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
-        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
-        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
-        transform: $keyframe_fav_btn_scale_zoom_out;
-    }
-
-    70% {
-        -moz-transform: $keyframe_fav_btn_scale_zoom_in;
-        -ms-transform: $keyframe_fav_btn_scale_zoom_in;
-        -webkit-transform: $keyframe_fav_btn_scale_zoom_in;
-        transform: $keyframe_fav_btn_scale_zoom_in;
-        box-shadow: $keyframe_fav_btn_shadow;
-    }
-
-    100% {
-        -moz-transform: $keyframe_fav_btn_scale_zoom_out;
-        -ms-transform: $keyframe_fav_btn_scale_zoom_out;
-        -webkit-transform: $keyframe_fav_btn_scale_zoom_out;
-        transform: $keyframe_fav_btn_scale_zoom_out;
-        box-shadow: $keyframe_fav_btn_shadow;
-    }
 }

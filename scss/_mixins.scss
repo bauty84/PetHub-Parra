@@ -64,3 +64,14 @@
         color: #FFFFFF;
     }
 }
+
+$slider_imgs: ("1": "../img/index_slider/img_001.jpg",
+                "2": "../img/index_slider/img_002.jpg",
+                "3": "../img/index_slider/img_003.jpg");
+
+/* Loop para crear clases de carga de img en slider */
+@each $key, $url in $slider_imgs {
+    .slide-#{$key} {
+        background-image: url($url);
+    }
+}

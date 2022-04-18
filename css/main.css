@@ -1,95 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Smooch+Sans:wght@300;600;700;900&display=swap");
-html {
-  height: 100%;
-  max-height: 100%; }
+/* Loop para crear clases de carga de img en slider */
+.slide-1 {
+  background-image: url("../img/index_slider/img_001.jpg"); }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Hubballi'; }
+.slide-2 {
+  background-image: url("../img/index_slider/img_002.jpg"); }
 
-body {
-  display: grid;
-  height: 100%;
-  max-height: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr auto 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "header" "content" "footer"; }
+.slide-3 {
+  background-image: url("../img/index_slider/img_003.jpg"); }
 
-.content {
-  grid-area: content; }
+/* Loop para crear clases de carga de img en slider */
+.slide-1 {
+  background-image: url("../img/index_slider/img_001.jpg"); }
 
-.header {
-  grid-area: header;
-  background-color: #16385a; }
+.slide-2 {
+  background-image: url("../img/index_slider/img_002.jpg"); }
 
-.footer {
-  grid-area: footer;
-  background-color: #16385a; }
-
-.navbar-expand-lg {
-  max-width: 1220px;
-  margin: auto; }
+.slide-3 {
+  background-image: url("../img/index_slider/img_003.jpg"); }
 
 /* Estilo de Tarjetas */
 .card-sl {
   border-radius: 8px;
   min-width: 225px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19); }
-
-.card-image {
-  max-height: 100%;
-  min-width: 225px;
-  border-radius: 8px 8px 0px 0; }
-
-.card-action {
-  position: relative;
-  float: right;
-  margin-top: -25px;
-  margin-right: 10px;
-  z-index: 50;
-  color: #E26D5C;
-  background: #FFFFFF;
-  border-radius: 100%;
-  padding: 10px;
-  font-size: 14px; }
-  .card-action:hover {
-    color: #FFFFFF;
-    background: #E26D5C;
-    animation: pulse 1.5s infinite;
-    -webkit-animation: pulse 1.5s infinite; }
-
-.card-heading {
-  font-size: 16px;
-  font-weight: bold;
-  background: #FFFFFF;
-  padding: 10px 15px; }
-
-.card-text {
-  padding: 10px 15px;
-  background: #FFFFFF;
-  font-size: 14px;
-  color: #1f1f1f; }
-  .card-text.customPrecio {
-    font-weight: bold;
+  .card-sl .card-image {
+    max-height: 100%;
+    min-width: 225px;
+    border-radius: 8px 8px 0px 0; }
+  .card-sl .card-action {
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    margin-right: 10px;
+    z-index: 50;
     color: #E26D5C;
-    font-size: 16px; }
-
-.card-button {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  width: 100%;
-  font-size: 16px;
-  background-color: #FFAD66;
-  color: #FFFFFF;
-  border-radius: 0 0 8px 8px; }
-  .card-button:hover {
-    text-decoration: none;
-    background-color: #16385a;
-    color: #FFFFFF; }
+    background: #FFFFFF;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 14px; }
+    .card-sl .card-action:hover {
+      color: #FFFFFF;
+      background: #E26D5C;
+      animation: pulse 1.5s infinite;
+      -webkit-animation: pulse 1.5s infinite; }
+  .card-sl .card-heading {
+    font-size: 16px;
+    font-weight: bold;
+    background: #FFFFFF;
+    padding: 10px 15px; }
+  .card-sl .card-text {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #1f1f1f; }
+    .card-sl .card-text.customPrecio {
+      font-weight: bold;
+      color: #E26D5C;
+      font-size: 16px; }
+  .card-sl .card-button {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    background-color: #FFAD66;
+    color: #FFFFFF;
+    border-radius: 0 0 8px 8px; }
+    .card-sl .card-button:hover {
+      text-decoration: none;
+      background-color: #16385a;
+      color: #FFFFFF; }
 
 @keyframes pulse {
   0% {
@@ -129,6 +110,40 @@ body {
     transform: scale(0.9);
     box-shadow: 0 0 0 50px rgba(90, 153, 212, 0); } }
 
+html {
+  height: 100%;
+  max-height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hubballi'; }
+
+body {
+  display: grid;
+  height: 100%;
+  max-height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr auto 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "content" "footer"; }
+
+.content {
+  grid-area: content; }
+
+.header {
+  grid-area: header;
+  background-color: #16385a; }
+
+.footer {
+  grid-area: footer;
+  background-color: #16385a; }
+
+.navbar-expand-lg {
+  max-width: 1220px;
+  margin: auto; }
+
 .navbar-brand img {
   height: 52px;
   width: 114px; }
@@ -164,6 +179,16 @@ nav.navbar.navbar-expand-lg {
       text-decoration: none;
       font-family: 'Hubballi';
       color: #FFFFFF; }
+
+/* Loop para crear clases de carga de img en slider */
+.slide-1 {
+  background-image: url("../img/index_slider/img_001.jpg"); }
+
+.slide-2 {
+  background-image: url("../img/index_slider/img_002.jpg"); }
+
+.slide-3 {
+  background-image: url("../img/index_slider/img_003.jpg"); }
 
 .content_container {
   position: relative;
@@ -222,15 +247,6 @@ nav.navbar.navbar-expand-lg {
   left: 0;
   z-index: 100;
   transition: left .65s ease-out; }
-
-.slide-1 {
-  background-image: url("../img/index_slider/img_001.jpg"); }
-
-.slide-2 {
-  background-image: url("../img/index_slider/img_002.jpg"); }
-
-.slide-3 {
-  background-image: url("../img/index_slider/img_003.jpg"); }
 
 .content_title {
   display: inline-block;
