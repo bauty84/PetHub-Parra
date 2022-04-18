@@ -132,60 +132,18 @@
     }
 
     &.serv-btn-buy {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        text-decoration: none;
-        font-size: 18px;
-        background-size: 100% 200%;
+        @extend .serv-btn-cart;
         background-image: linear-gradient(to bottom, #76a2ce 50%, #38536e 50%);
-        -webkit-transition: background-position .2s;
-        -moz-transition: background-position .2s;
-        transition: background-position .2s;
-        color: #222222;
-        border-radius: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
     }
 
     &.serv-btn-fav {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        text-decoration: none;
-        font-size: 18px;
-        background-size: 100% 200%;
+        @extend .serv-btn-cart;
         background-image: linear-gradient(to bottom, #ce6363 50%, #d88080 50%);
-        -webkit-transition: background-position .2s;
-        -moz-transition: background-position .2s;
-        transition: background-position .2s;
-        color: #222222;
-        border-radius: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
     }
 
     &.serv-btn-whatsapp {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        text-decoration: none;
-        font-size: 18px;
-        background-size: 100% 200%;
+        @extend .serv-btn-cart;
         background-image: linear-gradient(to bottom, #2dd378 50%, #1b812c 50%);
-        -webkit-transition: background-position .2s;
-        -moz-transition: background-position .2s;
-        transition: background-position .2s;
-        color: #222222;
-        border-radius: 0;
-        padding-top: 5px;
-        padding-bottom: 5px;
     }
 
     &.serv-btn-cart:hover {
@@ -193,12 +151,14 @@
         color: #FFFFFF;
         background-position: 0 -100%;
     }
-}
 
-.serv-btn-buy:hover,
-.serv-btn-fav:hover,
-.serv-btn-whatsapp:hover {
-    text-decoration: none;
-    color: #FFFFFF;
-    background-position: 0 -100%;
+    &.serv-btn-buy:hover{
+        @extend .serv-btn-cart:hover;
+    }
+    &.serv-btn-fav:hover {
+        @extend .serv-btn-cart:hover;
+    }
+    &.serv-btn-whatsapp:hover {
+        @extend .serv-btn-cart:hover;
+    }
 }
