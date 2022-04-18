@@ -44,6 +44,7 @@
 #faqs_section_cta_conf {
     font-size: 24px;
     font-weight: 600;
+    border-bottom: #FFAD66 1px solid;
 }
 
 .faq_container_preguntas__items {
@@ -52,7 +53,7 @@
     list-style-type: none;
     margin: 0 10px 10px 10px;
     padding-bottom: 5px;
-    border-bottom: #FFAD66 1px solid;
+    
 
     a {
         text-decoration: none;

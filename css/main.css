@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Smooch+Sans:wght@300;600;700;900&display=swap");
+/* Mapa */
 /* Loop para crear clases de carga de img en slider */
 .slide-1 {
   background-image: url("../img/index_slider/img_001.jpg"); }
@@ -9,6 +10,7 @@
 .slide-3 {
   background-image: url("../img/index_slider/img_003.jpg"); }
 
+/* Mapa */
 /* Loop para crear clases de carga de img en slider */
 .slide-1 {
   background-image: url("../img/index_slider/img_001.jpg"); }
@@ -123,11 +125,21 @@ body {
   display: grid;
   height: 100%;
   max-height: 100%;
+  -ms-overflow-style: none;
+  /* Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow-y: scroll;
+  overflow-x: hidden;
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr auto 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "header" "content" "footer"; }
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */ }
 
 .content {
   grid-area: content; }
@@ -143,6 +155,10 @@ body {
 .navbar-expand-lg {
   max-width: 1220px;
   margin: auto; }
+
+h3,
+.h3 {
+  margin: 0 !important; }
 
 .navbar-brand img {
   height: 52px;
@@ -180,6 +196,7 @@ nav.navbar.navbar-expand-lg {
       font-family: 'Hubballi';
       color: #FFFFFF; }
 
+/* Mapa */
 /* Loop para crear clases de carga de img en slider */
 .slide-1 {
   background-image: url("../img/index_slider/img_001.jpg"); }
@@ -201,7 +218,7 @@ nav.navbar.navbar-expand-lg {
 .index-slider {
   position: relative;
   max-width: 1220px;
-  margin: 10px auto;
+  margin: auto;
   padding: 20px 0 20px 0;
   background-color: #EDEDED;
   display: block;
@@ -303,7 +320,6 @@ ul.publicacion {
   width: 100%;
   align-content: center;
   margin-top: 10px;
-  padding-bottom: 15px;
   font-weight: 700; }
   .servicios_content_title p {
     font-size: 28px;
@@ -424,7 +440,6 @@ ul.publicacion {
   justify-content: center;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 15px;
   font-weight: 700; }
   .productos_content_title p {
     font-size: 28px;
@@ -536,15 +551,15 @@ ul.publicacion {
 #faqs_section_producto,
 #faqs_section_cta_conf {
   font-size: 24px;
-  font-weight: 600; }
+  font-weight: 600;
+  border-bottom: #FFAD66 1px solid; }
 
 .faq_container_preguntas__items {
   display: flex;
   justify-content: center;
   list-style-type: none;
   margin: 0 10px 10px 10px;
-  padding-bottom: 5px;
-  border-bottom: #FFAD66 1px solid; }
+  padding-bottom: 5px; }
   .faq_container_preguntas__items a {
     text-decoration: none;
     color: #575757; }
