@@ -1,0 +1,66 @@
+@import "_variables";
+
+@mixin cards-sl {
+    border-radius: 8px;
+    min-width: 225px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 
+                0 1px 3px 0 rgba(0, 0, 0, 0.19);
+}
+@mixin cards-image {
+    max-height: 100%;
+    min-width: 225px;
+    border-radius: 8px 8px 0px 0;
+}
+@mixin cards-action {
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    margin-right: 10px;
+    z-index: 50;
+    color: #E26D5C;
+    background: #FFFFFF;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 14px;
+
+    &:hover {
+        color: #FFFFFF;
+        background: #E26D5C;
+        animation: pulse 1.5s infinite;
+        -webkit-animation: pulse 1.5s infinite;
+    }
+}
+@mixin cards-heading {
+    font-size: 16px;
+    font-weight: bold;
+    background: #FFFFFF;
+    padding: 10px 15px;
+}
+@mixin cards-text {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #1f1f1f;
+
+    &.customPrecio {
+        font-weight: bold;
+        color: #E26D5C;
+        font-size: 16px;
+    }
+}
+@mixin cards-button {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+    background-color: $default_orange_site;
+    color: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $default_blue_site;
+        color: #FFFFFF;
+    }
+}

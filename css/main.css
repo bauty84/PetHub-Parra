@@ -39,7 +39,7 @@ body {
   min-width: 225px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19); }
 
-.card-image img {
+.card-image {
   max-height: 100%;
   min-width: 225px;
   border-radius: 8px 8px 0px 0; }
@@ -56,7 +56,7 @@ body {
   padding: 10px;
   font-size: 14px; }
   .card-action:hover {
-    color: #fff;
+    color: #FFFFFF;
     background: #E26D5C;
     animation: pulse 1.5s infinite;
     -webkit-animation: pulse 1.5s infinite; }
@@ -64,12 +64,12 @@ body {
 .card-heading {
   font-size: 16px;
   font-weight: bold;
-  background: #fff;
+  background: #FFFFFF;
   padding: 10px 15px; }
 
 .card-text {
   padding: 10px 15px;
-  background: #fff;
+  background: #FFFFFF;
   font-size: 14px;
   color: #1f1f1f; }
   .card-text.customPrecio {
@@ -84,12 +84,12 @@ body {
   width: 100%;
   font-size: 16px;
   background-color: #FFAD66;
-  color: #fff;
+  color: #FFFFFF;
   border-radius: 0 0 8px 8px; }
   .card-button:hover {
     text-decoration: none;
     background-color: #16385a;
-    color: #fff; }
+    color: #FFFFFF; }
 
 @keyframes pulse {
   0% {
@@ -108,7 +108,7 @@ body {
     -ms-transform: scale(0.9);
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0); } }
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0); } }
 
 @-webkit-keyframes pulse {
   0% {
@@ -127,7 +127,7 @@ body {
     -ms-transform: scale(0.9);
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0); } }
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0); } }
 
 .navbar-brand img {
   height: 52px;
@@ -499,7 +499,7 @@ ul.publicacion {
     border-radius: 4px;
     cursor: pointer; }
     .productos_search__bar button:hover {
-      background-color: #16385A;
+      background-color: #16385a;
       color: #FFFFFF; }
 
 .productos_search__filter {
@@ -513,7 +513,7 @@ ul.publicacion {
     text-decoration: none;
     color: #000000; }
     .productos_search__filter a:hover {
-      color: #16385A;
+      color: #16385a;
       font-weight: bold; }
 
 .productos {

@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Smooch+Sans:wght@300;600;700;900&display=swap');
 
-$default_blue_site: #16385a;
-$default_orange_site: #FFAD66;
+@import "_variables";
 
-// Propiedades animacion favorito en cards
-$keyframe_fav_btn_scale_zoom_out: scale(0.9);
-$keyframe_fav_btn_scale_zoom_in: scale(1);
-$keyframe_fav_btn_shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+@import "_mixins";
 
 html {
     height: 100%;
@@ -54,72 +50,27 @@ body {
 /* Estilo de Tarjetas */
 
 .card-sl {
-    border-radius: 8px;
-    min-width: 225px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-image img {
-    max-height: 100%;
-    min-width: 225px;
-    border-radius: 8px 8px 0px 0;
-}
-
-.card-action {
-    position: relative;
-    float: right;
-    margin-top: -25px;
-    margin-right: 10px;
-    z-index: 50;
-    color: #E26D5C;
-    background: #FFFFFF;
-    border-radius: 100%;
-    padding: 10px;
-    font-size: 14px;
-
-    &:hover {
-        color: #FFFFFF;
-        background: #E26D5C;
-        animation: pulse 1.5s infinite;
-        -webkit-animation: pulse 1.5s infinite;
+    @include cards-sl;
+    .card-image {
+        @include cards-image;
     }
-}
-
-.card-heading {
-    font-size: 16px;
-    font-weight: bold;
-    background: #FFFFFF;
-    padding: 10px 15px;
-}
-
-.card-text {
-    padding: 10px 15px;
-    background: #FFFFFF;
-    font-size: 14px;
-    color: #1f1f1f;
-
-    &.customPrecio {
-        font-weight: bold;
-        color: #E26D5C;
-        font-size: 16px;
+    
+    .card-action {
+        @include cards-action;
     }
-}
-
-.card-button {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-    font-size: 16px;
-    background-color: $default_orange_site;
-    color: #FFFFFF;
-    border-radius: 0 0 8px 8px;
-
-    &:hover {
-        text-decoration: none;
-        background-color: $default_blue_site;
-        color: #FFFFFF;
+    
+    .card-heading {
+        @include cards-heading;
     }
+    
+    .card-text {
+        @include cards-text;
+    }
+    
+    .card-button {
+        @include cards-button;
+    }
+    
 }
 
 @keyframes pulse {
