@@ -20,23 +20,27 @@ body {
     display: grid;
     height: 100%;
     max-height: 100%;
+    background-image: url("../img/background_site.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: 500px;
+    background-position: left top;
     -ms-overflow-style: none;
-    /* Internet Explorer, Edge */
+    /* for Internet Explorer, Edge */
     scrollbar-width: none;
-    /* Firefox */
+    /* for Firefox */
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr auto 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "header" "content" "footer";
+        "header""content""footer";
 }
 
 body::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari, Opera */
 }
 
 .content {
@@ -46,11 +50,13 @@ body::-webkit-scrollbar {
 .header {
     grid-area: header;
     background-color: $default_blue_site;
+    border-bottom: $default_border_site_header_footer;
 }
 
 .footer {
     grid-area: footer;
     background-color: $default_blue_site;
+    border-top: $default_border_site_header_footer;
 }
 
 .navbar-expand-lg {
@@ -61,4 +67,19 @@ body::-webkit-scrollbar {
 h3,
 .h3 {
     margin: 0 !important;
+}
+
+@media only screen and (max-width: 1220px) {
+
+    article,
+    .content_container,
+    .faq_container,
+    .contact_container,
+    .productos, .content_title {
+        background-image: url("../img/background_site.png");
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-size: 500px;
+        background-position: left top;
+    }
 }

@@ -6,6 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Servicios para tu mascota, paseso, lavados, veterinaria y mas.">
 	<meta name="keywords" content="COMUNIDAD, SERVICIOS, PRODUCTOS, LAVADO, PASEO, VETERINARIA, INFORMACION, MASCOTAS, GATOS, PERROS, COMIDAS, ACCESORIOS, CAMAS">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="PetHub - La comunidad para tu mascota">
+	<meta property="og:description"
+		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
+	<meta property="og:image" content="../img/img_seo_redes.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:title" content="PetHub - La comunidad para tu mascota">
+	<meta property="twitter:description"
+		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
+	<meta property="twitter:image" content="../img/img_seo_redes.png">
+
 	<link rel="shortcut icon" href="../img/favicon.ico">
 	<title>Servicios para tu mascotas</title>
 
@@ -50,14 +67,34 @@
 					</ul>
 					<ul class="navbar-nav d-flex nav-user-menu">
 						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-circle-user fa-xs"></i> Usuario
-								<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+							<li class="nav-item p-2 dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa-regular fa-circle-user fa-xs"></i> 
+									Usuario
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Perfil</a></li>
+									<li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+									<li><a class="dropdown-item" href="#">Opciones</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Salir</a></li>
+								</ul>
+							</li>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-regular fa-bell fa-xs"></i></a>
 						</li>
-						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-heart fa-xs"></i></a>
+						<li class="nav-item p-2 dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFav" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false"><i
+									class="fa-regular fa-heart fa-xs"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownFav">
+								<li><a class="dropdown-item" href="#">Sin favoritos</a></li>
+							</ul>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping fa-xs"></i></a>
@@ -121,22 +158,12 @@
 													<div class="col-md">
 														<div class="card-body">
 															<h5 class="card-title">Baño de mascotas</h5>
-															<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
-																Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
+															<p class="card-text">
+																Ofrecemos varios para tus mascotas completos con 
+																satisfaccion garantizadas.
+																Aceptamos todo tipo de mascota domesticada, con amplios
+																horarios y todos los metodos de pagos para su facil 
+																acceso.
 															</p>
 														</div>
 													</div>
@@ -171,23 +198,12 @@
 													</div>
 													<div class="col-md">
 														<div class="card-body">
-															<h5 class="card-title">Pase de perros</h5>
-															<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
-																Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
+															<h5 class="card-title">Paseo de perros</h5>
+															<p class="card-text">
+																Paseo de perros de todos los tamaños, horarios 
+																flexibles, recorridos extensos.
+																Se incluye hidratacion y alimento nutricional 
+																durante el paseo de ser requerido.
 															</p>
 														</div>
 													</div>
@@ -223,22 +239,10 @@
 													<div class="col-md">
 														<div class="card-body">
 															<h5 class="card-title">Veteriana Salud Mascotas</h5>
-															<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
-																Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
+															<p class="card-text">
+																Tu veterinaria para tu tranquilidad y de tu mascota.
+																Horarios de L a V 08 a 18. Aceptamos todos los medios de pagos,
+																para emergencias usar el link de whatsapp abajo.
 															</p>
 														</div>
 													</div>
@@ -274,22 +278,12 @@
 													<div class="col-md">
 														<div class="card-body">
 															<h5 class="card-title">Vet Mascotas Tihuil</h5>
-															<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
-																Lorem ipsum dolor sit amet, consectetur
-																adipisicing elit. A, cupiditate. Fuga deleniti animi
-																sapiente
-																praesentium numquam sed totam adipisci. Perferendis ab
-																nihil
-																quod. Molestias tempore totam ipsa laudantium,
-																voluptatibus
-																omnis.
+															<p class="card-text">
+																Servicios de vacunacion, desparasitacion, diagnosis y emergencias.
+																Ofrecemos productos en la seccion de productos del sitio o presencial 
+																en nuestro local en Av Elflein 394.
+																Horario de corrido de 8 a 18 de Lunes a Sabados. Para emergencias puedes
+																encontrar nuestro contacto en la parte inferior, en el boton de whatsapp.
 															</p>
 														</div>
 													</div>

@@ -41,6 +41,21 @@ nav.navbar.navbar-expand-lg {
             text-decoration: none;
             font-family: 'Hubballi';
             color: #FFFFFF;
+
         }
     }
+}
+
+a.nav-link:hover, a.nav-link:focus {
+    color: $default_orange_site;
+}
+
+ul.dropdown-menu.show {
+    background: $default_blue_site;
+}
+
+a.dropdown-item:hover {
+    background: $default_orange_site;
+    columns: black;
+    font-weight: bold;
 }

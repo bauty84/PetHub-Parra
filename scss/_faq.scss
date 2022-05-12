@@ -58,5 +58,10 @@
     a {
         text-decoration: none;
         color: #575757;
+
+        &:hover {
+            font-weight: bolder;
+            color: $default_blue_site;
+        }
     }
 }

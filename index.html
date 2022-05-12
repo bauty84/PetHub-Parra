@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Primary Meta Tags -->
 	<title>PetHub - La comunidad para tu mascota</title>
 	<meta name="title" content="PetHub - La comunidad para tu mascota">
 	<meta name="description"
@@ -19,7 +18,7 @@
 	<meta property="og:title" content="PetHub - La comunidad para tu mascota">
 	<meta property="og:description"
 		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
-	<meta property="og:image" content="/img/..">
+	<meta property="og:image" content="/img/img_seo_redes.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
@@ -27,7 +26,7 @@
 	<meta property="twitter:title" content="PetHub - La comunidad para tu mascota">
 	<meta property="twitter:description"
 		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
-	<meta property="twitter:image" content="/img/..">
+	<meta property="twitter:image" content="/img/img_seo_redes.png">
 
 	<link rel="shortcut icon" href="img/favicon.ico">
 
@@ -71,15 +70,33 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav d-flex nav-user-menu">
-						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-circle-user fa-xs"></i> Usuario
-								<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+						<li class="nav-item p-2 dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa-regular fa-circle-user fa-xs"></i>
+								Usuario
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Perfil</a></li>
+								<li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+								<li><a class="dropdown-item" href="#">Opciones</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Salir</a></li>
+							</ul>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-regular fa-bell fa-xs"></i></a>
 						</li>
-						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-heart fa-xs"></i></a>
+						<li class="nav-item p-2 dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFav" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false"><i
+									class="fa-regular fa-heart fa-xs"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownFav">
+								<li><a class="dropdown-item" href="#">Sin favoritos</a></li>
+							</ul>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping fa-xs"></i></a>

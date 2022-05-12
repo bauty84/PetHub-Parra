@@ -6,6 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Preguntas frecuentes sobre el sitio en general, servicios y productos.">
 	<meta name="keywords" content="DUDAS, PREGUNTAS, FRECUENTES, SERVICIOS, PRODUCTOS, INFORMACION, MASCOTAS, GATOS, PERROS">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="PetHub - La comunidad para tu mascota">
+	<meta property="og:description"
+		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
+	<meta property="og:image" content="../img/img_seo_redes.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:title" content="PetHub - La comunidad para tu mascota">
+	<meta property="twitter:description"
+		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
+	<meta property="twitter:image" content="../img/img_seo_redes.png">
+
 	<link rel="shortcut icon" href="../img/favicon.ico">
 	<title>FAQ Resuelve tus dudas</title>
 
@@ -49,14 +66,34 @@
 					</ul>
 					<ul class="navbar-nav d-flex nav-user-menu">
 						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-circle-user fa-xs"></i> Usuario
-								<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+							<li class="nav-item p-2 dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa-regular fa-circle-user fa-xs"></i> 
+									Usuario
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Perfil</a></li>
+									<li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+									<li><a class="dropdown-item" href="#">Opciones</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Salir</a></li>
+								</ul>
+							</li>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-regular fa-bell fa-xs"></i></a>
 						</li>
-						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-heart fa-xs"></i></a>
+						<li class="nav-item p-2 dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFav" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false"><i
+									class="fa-regular fa-heart fa-xs"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownFav">
+								<li><a class="dropdown-item" href="#">Sin favoritos</a></li>
+							</ul>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping fa-xs"></i></a>
@@ -88,44 +125,25 @@
 					<p id="faqs_section_servicio">Servicios</p>
 					<ul id="faq_container_preguntas__list_servicios">
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#"> ¿Que servicios se ofrecen para persona fisica?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Que servicios son permitidos en la plataforma?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como ofrecer mis servicios en el sitio web?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como reclamar un servicio mal realizado?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como clasificar un servicio adquirido como persona fisica?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Existe alguna garantia en el servicio contratado?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Metodo de pago de un servicio?</a>
 						</li>
 					</ul>
 				</div>
@@ -135,44 +153,25 @@
 					<p id="faqs_section_producto">Productos</p>
 					<ul id="faq_container_preguntas__list_productos">
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Metodo de pago de un o varios productos?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como puedo ofrecer mi/s producto?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Que productos son permitidos en la plataforma?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Metodo de pago permitidos para la compra?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como reclamara una compra fallida?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como clasificar una compra?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Existe alguna proteccion a compra de producto?</a>
 						</li>
 					</ul>
 				</div>
@@ -182,44 +181,25 @@
 					<p id="faqs_section_cta_conf">Cuenta y configuraciones</p>
 					<ul id="faq_container_preguntas__list_cuentas_configuracion">
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Donde puedo ver mi perfil?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como cargar mi whatsapp en mi perfil?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como asocio mi cuenta a las redes?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como modifico mi perfil?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como cargo o edito metodos de pagos?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como habilitar el modo de seguridad 2FA?</a>
 						</li>
 						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
-						</li>
-						<li class="faq_container_preguntas__items">
-							<a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-								explicabo necessitatibus autem harum architecto?</a>
+							<a href="#">¿Como eliminar o suspender mi cuenta?</a>
 						</li>
 					</ul>
 				</div>

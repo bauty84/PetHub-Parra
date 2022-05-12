@@ -6,6 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Contactanos para sacar dudas, sumarte a la comunidad, agregar tu servicio o producto.">
 	<meta name="keywords" content="CONTACTO, FORMULARIO, UBICACION, SERVICIOS, PRODUCTOS, INFORMACION, MASCOTAS, GATOS, PERROS">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="PetHub - La comunidad para tu mascota">
+	<meta property="og:description"
+		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
+	<meta property="og:image" content="../img/img_seo_redes.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:title" content="PetHub - La comunidad para tu mascota">
+	<meta property="twitter:description"
+		content="Tu portal a todo lo relacionado con mastocas, servicios, productos, contactos, precios.">
+	<meta property="twitter:image" content="../img/img_seo_redes.png">
+
 	<link rel="shortcut icon" href="../img/favicon.ico">
 	<title>Contactanos por estos medios</title>
 
@@ -44,20 +61,40 @@
 						<li class="nav-item">
 							<a href="../pages/faq.html" class="nav-link">FAQ</a>
 						</li>
-						<li class="nav-item" i>
+						<li class="nav-item">
 							<a href="../pages/contacto.html" class="nav-link">Contacto</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav d-flex nav-user-menu">
 						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-circle-user fa-xs"></i> Usuario
-								<i class="fa-solid fa-chevron-down fa-2xs"></i></a>
+							<li class="nav-item p-2 dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa-regular fa-circle-user fa-xs"></i> 
+									Usuario
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Perfil</a></li>
+									<li><a class="dropdown-item" href="#">Mis Pedidos</a></li>
+									<li><a class="dropdown-item" href="#">Opciones</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Salir</a></li>
+								</ul>
+							</li>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-regular fa-bell fa-xs"></i></a>
 						</li>
-						<li class="nav-item p-2">
-							<a href="#" class="nav-link"><i class="fa-regular fa-heart fa-xs"></i></a>
+						<li class="nav-item p-2 dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFav" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false"><i
+									class="fa-regular fa-heart fa-xs"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownFav">
+								<li><a class="dropdown-item" href="#">Sin favoritos</a></li>
+							</ul>
 						</li>
 						<li class="nav-item p-2">
 							<a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping fa-xs"></i></a>
@@ -90,8 +127,13 @@
 							<input type="text" placeholder="Nombre completo"><br>
 							<input type="email" placeholder="Correo electronico" name="correo"><br>
 							<input type="number" placeholder="Numero telefonico"><br>
-							<input type="text" placeholder="Asunto"><select name="tipo_de_consulta">
+							<input type="text" placeholder="Asunto">
+							<select name="tipo_de_consulta">
 								<option disabled selected>Tipo de consulta</option>
+								<option value="tipo_01">Soporte Pymes</option>
+								<option value="tipo_02">Soporte persona</option>
+								<option value="tipo_03">Planes</option>
+								<option value="tipo_04">Ventas</option>
 							</select><br>
 							<textarea placeholder="Tu mensaje..."></textarea><br>
 							<input type="reset" value="LIMPIAR">
